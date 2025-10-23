@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Clash Experience</title>
+    <link rel="icon" href="https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC95TVViWVE4a0JZbTdtZE1CaHlSdC5wbmcifQ:supercell:2hOc2vyjlhTDNTjQCZR6wDwVoVCEJQBNMKShSFVmTW8?width=2400">
+    <style>
+        @font-face {
+            font-family:'CRFont';
+            src: url('fonts/Clash-Regular.woff2') format('woff2');
+        }
+        body {
+            background-color: rgb(126, 126, 126);
+            color: #ffffff;
+            font-family: 'CRFont', sans-serif;
+        }
+        h1 {
+            font-family: 'CRFont', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            text-shadow: 
+                3px 3px black,
+                3px -3px black,
+                -3px 3px black,
+                -3px -3px black;
+        }
+        h2 {
+            font-family: 'CRFont', sans-serif;
+            font-size: 32px;
+            text-align: center;
+        }
+        p {
+            font-family: 'CRFont', sans-serif;
+            font-size: 16px;
+            text-align: center;
+            text-shadow: 
+                1px 1px black,
+                1px -1px black,
+                -1px 1px black,
+                -1px -1px black;
+        }
+        input {
+            display: block;
+            margin: 20px auto;
+            text-align: center; 
+            width: 250px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-family: 'CRFont', sans-serif;
+            font-size: 16px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .card-img {
+            display: block;
+            position: relative;
+            width: 360px;
+            height: 420px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .card-img:hover {
+            transform: scale(1.1);
+            filter: brightness(1.2);
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Clash Royale Experience</h1>
+    <p>Veja aqui sobre estatisticas de Clash Royale</p>
+    <input type="search" id="searchBar" placeholder="Nome ou tag">
+    <div class="cards-container">
+        <a href="players.html" class="card-img"
+            style="background-image: url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC85Q01HQzhOaHB2UDJRVTQ1S0VQaS5wbmcifQ:supercell:E1l34qU-KOtD4-xAr7Se88zRiEsG9iKee5K6Op12e4I?width=2400');">
+        <div class="overlay">
+            <h2>Jogadores</h2>
+            <p>Veja informações detalhadas sobre perfil, troféus, nível e mais.</p>
+        </div>
+        </a>
+        <a href="clan.html" class="card-img"
+           style="background-image: url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9neEZ6TFdjWkhXOW9YbTUyZ0tjVC5wbmcifQ:supercell:RP7gmZoFGACUOdf-GVmPj6d_ZoNoTeBVPd0kiigR3vE?width=2400');">
+        <div class="overlay">
+            <h2>Clãs</h2>
+            <p>Descubra informações sobre o seu clã e seus membros.</p>
+        </div>
+        </a>
+        <a href="decks.html" class="card-img"
+           style="background-image: url('https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJwYXRoIjoic3VwZXJjZWxsXC9maWxlXC9uMWR3VWRrcE0yRVhGRU5JMnRqVi5wbmcifQ:supercell:oDCZkl9ZDjJHdoFYK6NvCCAZBfW9vTs-RFMBSfKlTOc?width=2400');">
+        <div class="overlay">
+            <h2>Decks</h2>
+            <p>Monte e analise seus decks de acordo com suas cartas.</p>
+        </div>
+        </a>
+</div>
+</body>
+</html>

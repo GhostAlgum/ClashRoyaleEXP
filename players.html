@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>ClashExp</title>
+    <style>
+        @font-face {
+                font-family:'CRFont';
+                src: url('fonts/Clash-Regular.woff2') format('woff2');
+        }
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'CRFont', sans-serif;
+        }
+        h1 {
+            font-family: 'CRFont', sans-serif;
+            font-size: 48px;
+            text-align: center;
+        }
+        h2 {
+            font-family: 'CRFont', sans-serif;
+            font-size: 36px;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        input {
+            display: block;
+            margin: 20px auto;
+            text-align: center; 
+            width: 250px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            font-family: 'CRFont', sans-serif;
+            font-size: 16px;
+        }
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espaço entre os cartões */
+            margin-top: 40px;
+            flex-wrap: wrap; /* Faz os cartões quebrarem linha em telas pequenas */
+        }
+        .card {
+            background-color: #1c1c1c;
+            border-radius: 12px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Clash Royale Experience</h1>
+    <p>Site sobre estatisticas de Clash Royale</p>
+    <input type="search" id="searchBar" placeholder="Nome ou tag">
+    <div class="cards-container">
+        <div class="card">
+            <h2>Perfil do Jogador</h2>
+            <p>Veja informações detalhadas do perfil, troféus, nível e mais.</p>
+            <a href="perfil.html"></a>
+        </div>
+        <div class="card">
+            <h2>Clã</h2>
+            <p>Descubra informações sobre o seu clã e seus membros.</p>
+        </div>
+        <div class="card">
+            <h2>Decks</h2>
+            <p>Monte e analise seus decks de acordo com suas cartas.</p>
+        </div>
+</body>
+</html>
